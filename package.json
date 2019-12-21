@@ -1,11 +1,12 @@
 {
-  "name": "baseapp",
-  "version": "1.0.0",
-  "description": "la base d'une application angualr en front et nest en back",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+    "name": "baseapp",
+    "version": "1.0.0",
+    "description": "la base d'une application angualr en front et nest en back",
+    "main": "index.js",
+    "scripts": {
+        "start:dev": "concurrently \"cd back && npm run start:dev\" \"cd frontapp && npm run start\"",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Fred Landeau",
+    "license": "ISC"
 }
